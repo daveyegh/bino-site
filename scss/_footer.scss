@@ -1,0 +1,39 @@
+.footer {
+    background-color: #202020;
+    padding: 37px 0 37px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-social__link {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &-copyright__text {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        color: #999;
+    }
+    svg {
+        width: 10px; 
+        height: 20px;
+        fill: #999;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page-wrapper {
+        .footer {
+            padding: 15px 0 15px 0;
+            &__wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+const headerParallax = new Rellax('.header');

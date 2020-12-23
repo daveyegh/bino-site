@@ -1,0 +1,203 @@
+.touch {
+    background-color: #f4f5f9;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &-text__title {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro';
+        color: #6a6a6a;
+        text-transform: uppercase;
+    }
+    &-text__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        color: #9999;
+    }
+    &-text__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .line-left, .line-right {
+            width: 80px;
+            height: 1px;
+            background-color: #999999;
+        }
+        .line-left {
+            margin-right: 15px;
+        }
+        .line-right {
+            margin-left: 15px;
+        }
+        div {
+            width: 7px;
+            height: 7px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+    }
+    &-call {
+        margin-top: 45px;
+    }
+    &-call__wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &-call__info {
+        width: 40%;
+        background-color: #ffff;
+        padding-top: 90px;
+        padding-left: 90px;
+        padding-bottom: 90px;
+        margin-right: 28px;
+        box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    }
+    &-call__call, &-call__email {
+        margin-top: 40px;
+    }
+    &-call__address-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro';
+        color: #e74e3e;
+    }
+    &-call__address-subtitle {
+        max-width: 250px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        color: #999999;
+    }
+    &-call__call-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro';
+        color: #e74e3e;
+    }
+    &-call__call-subtitle {
+        span {
+            display: block;
+        }
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Open Sans';
+            color: #999999;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &-call__email-title {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro';
+        color: #e74e3e;
+    }
+    &-call__email-subtitle {
+        a {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Source Sans Pro';
+            color: #999999;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &-call__form { 
+        width: 60%;
+        background-color: #ffff;
+        padding: 40px 100px;
+        box-shadow: 0 5px 5px rgba(0,0,0,.1);
+
+    }
+    &-call__form-input {
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+        outline: 0;
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #999999;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;
+    }
+    &-call__form-textarea {
+        margin-top: 30px;
+        width: 100%;
+        height: 40%;
+        border: 0;
+        border-bottom: 1px solid #999999;
+        &:active {
+            outline: 0;
+        }
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        color: #999999;
+        resize: none;
+    }
+    &-call__form-button {
+        width: 30%;
+        height: 10%;
+        margin-top: 20px;
+        display: block;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 700;
+        color: #ffff;
+        background-color: #e74c3c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+        .touch {
+            padding-bottom: 60px;
+            &-call__wrapper {
+                flex-wrap: wrap;
+            }
+            &-call__info {
+                margin-bottom: 30px;
+                width: 100%;
+                padding-top: 0px;
+                padding-left: 0px; 
+                padding-bottom: 0px;
+                margin-right: 0px;
+                padding: 20px;
+            }
+            &-call__form-textarea {
+                margin-bottom: 15px;
+            }
+            &-call__form {
+                width: 100%;
+                padding: 15px;
+                padding-bottom: 100px;
+            }
+            &-call__form-button {
+                width: 50%;
+                height: 15%;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}

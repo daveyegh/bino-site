@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    ul {
+        list-style-type: none;
+    }
+    &.menu-opened{
+        overflow: hidden;
+    }
+    h1, p {
+        margin: 0
+    }
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import '_header';
+@import '_features';
+@import '_about';
+@import '_services';
+@import '_works';
+@import '_study';
+@import '_stats';
+@import '_prices';
+@import '_teams';
+@import '_partners';
+@import '_blog';
+@import '_touch';
+@import '_ship';
+@import '_footer';

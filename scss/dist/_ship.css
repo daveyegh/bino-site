@@ -1,0 +1,58 @@
+.ship {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url(../img/ship-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ship-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ship-text__title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: #fff;
+}
+.ship-text__title span {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  color: #fff;
+}
+.ship-text__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  color: #fff;
+}
+.ship-text__button {
+  margin-top: 20px;
+  width: 225px;
+  height: 55px;
+  background-color: #e74c3c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+@media screen and (max-width: 500px) {
+  .ship .touch {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .ship .touch-text__subtitle {
+    font-size: 14px;
+  }
+}
