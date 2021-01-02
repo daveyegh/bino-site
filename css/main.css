@@ -316,17 +316,17 @@ body h1, body p {
     position: relative;
     z-index: 3;
   }
-  .header .header__burger .active::before {
+  .header .header__burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 9px;
   }
-  .header .header__burger .active::after {
+  .header .header__burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 9px;
   }
-  .header .header__burger .active span {
+  .header .header__burger.active span {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
@@ -471,10 +471,13 @@ body h1, body p {
   background-color: #888888;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .features .features {
     padding-top: 45px;
   }
+}
+
+@media screen and (max-width: 600px) {
   .features .features__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -659,8 +662,7 @@ body h1, body p {
 .services__info {
   position: relative;
   width: 50%;
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: 40px;
 }
 
 .services__title {
@@ -701,6 +703,11 @@ body h1, body p {
   height: 100%;
 }
 
+.services__images-item {
+  width: 100%;
+  height: 100%;
+}
+
 .services__items {
   margin-left: 40px;
   display: -webkit-box;
@@ -717,6 +724,7 @@ body h1, body p {
   width: 100%;
   cursor: -webkit-grab;
   cursor: grab;
+  margin-left: 190px;
 }
 
 .services__item-elem {
@@ -731,17 +739,22 @@ body h1, body p {
 }
 
 .services__item-img {
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   z-index: 2;
   top: 50%;
   right: -112px;
-  width: 64px;
+  width: 90px;
   height: 64px;
   background-color: #f4f5f9;
   background-position: center;
@@ -766,10 +779,33 @@ body h1, body p {
   color: #999999;
 }
 
+@media screen and (max-width: 1024px) {
+  .services .services__items {
+    margin-left: 145px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .services .services__items {
+    margin-left: 138px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .services .services__items {
+    margin-left: 133px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .services .services__info {
     margin-top: 70px;
-    margin-bottom: 70px;
+  }
+  .services .services__items {
+    margin-left: 20px;
+  }
+  .services .services__item-elem {
+    margin-top: 20px;
   }
   .services .services__images {
     display: none;
@@ -993,8 +1029,6 @@ body h1, body p {
 
 .works__overlay {
   width: 100%;
-  -webkit-transition: 0.3 all ease;
-  transition: 0.3 all ease;
   height: 100%;
   background-color: rgba(231, 76, 60, 0.8);
   opacity: 0;
@@ -1003,6 +1037,8 @@ body h1, body p {
 
 .works__overlay:hover {
   opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .works__overlay::before {
@@ -1029,6 +1065,13 @@ body h1, body p {
   font-family: 'Open Sans';
   font-weight: 400;
   color: #fff;
+  padding-bottom: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  .works__item {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1229,7 +1272,7 @@ body h1, body p {
 .study-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: #f4f5f9;
+  background: black;
 }
 
 .study-pagination .swiper-pagination-bullet-active {
@@ -1237,47 +1280,48 @@ body h1, body p {
 }
 
 @media screen and (max-width: 768px) {
-  .study .study {
+  .study {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
-  .study .study__slider-img {
+  .study__slider-img {
     display: none;
   }
-  .study .study__slider-text {
+  .study__slider-text {
     width: 100%;
   }
-  .study .study__slider .swiper-container {
+  .study__slider .swiper-container {
     margin-right: 0px;
     padding: 100px 50px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .study .study {
+  .study {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .study .study__title {
+  .study__title {
     font-size: 35px;
   }
-  .study .study__subtitle {
+  .study__subtitle {
     padding-top: 20px;
     font-size: 12px;
   }
-  .study .study__line {
+  .study__line {
     padding-top: 20px;
   }
-  .study .study__slider {
+  .study__slider {
     padding-top: 35px;
   }
-  .study .study__slider .swiper-container {
+  .study__slider .swiper-container {
     margin-right: 0px;
     padding: 100px 50px;
   }
-  .study .study__slider-text {
+  .study__slider-text {
     width: 100%;
   }
-  .study .study__item-img {
+  .study__item-img {
     margin-left: 30%;
   }
 }
@@ -1788,8 +1832,8 @@ body h1, body p {
 }
 
 .team-line__avatar-wrapper:last-child {
-  margin-top: -189px;
-  margin-right: 20px;
+  margin-top: -20px;
+  margin-right: 229px;
 }
 
 .team-line__avatar {
@@ -2035,9 +2079,9 @@ body h1, body p {
 
 @media screen and (max-width: 768px) {
   .page-wrapper .partners__item {
-    width: 50%;
+    width: 45%;
     margin-bottom: 10px;
-    margin-right: 5px;
+    margin-right: 11px;
   }
 }
 
@@ -2135,6 +2179,20 @@ body h1, body p {
   display: flex;
 }
 
+.blog__item:nth-child(3) .blog__item-info__wrapper::before {
+  margin-left: 16px;
+  left: 98%;
+  -webkit-transform: translateY(-50%) rotate(270deg);
+          transform: translateY(-50%) rotate(270deg);
+}
+
+.blog__item:last-child .blog__item-info__wrapper::before {
+  margin-left: 16px;
+  left: 98%;
+  -webkit-transform: translateY(-50%) rotate(270deg);
+          transform: translateY(-50%) rotate(270deg);
+}
+
 .blog__item-img {
   width: 50%;
   height: 500px;
@@ -2151,10 +2209,28 @@ body h1, body p {
 }
 
 .blog__item-info {
-  padding-top: 70px;
-  padding-left: 50px;
   max-width: 50%;
   background-color: #e74c3c;
+}
+
+.blog__item-info__wrapper {
+  position: relative;
+  padding: 40px;
+}
+
+.blog__item-info__wrapper:before {
+  position: absolute;
+  top: 50%;
+  left: -90px;
+  display: block;
+  height: 70px;
+  border-width: 32px 40px 0;
+  border-style: solid;
+  border-color: #e74c3c transparent;
+  margin: 0 auto;
+  content: '';
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
 }
 
 .blog__item-title {
@@ -2197,15 +2273,30 @@ body h1, body p {
   transition: .3s all ease;
 }
 
+@media screen and (max-width: 1200px) {
+  .page-wrapper .blog__item-info__wrapper {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .page-wrapper .blog__item-info__wrapper {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-wrapper .blog__item {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .page-wrapper .blog__item {
     width: 100%;
   }
-  .page-wrapper .blog__item-img {
-    display: none;
-  }
   .page-wrapper .blog__item-info {
-    max-width: 100%;
+    max-width: 50%;
   }
   .page-wrapper .blog__item-subtitle {
     margin-bottom: 15px;
@@ -2395,6 +2486,10 @@ body h1, body p {
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.touch-call__form-form {
+  height: 100%;
+}
+
 .touch-call__form-input {
   outline: 0;
   margin-top: 30px;
@@ -2430,7 +2525,7 @@ body h1, body p {
 }
 
 .touch-call__form-button {
-  width: 30%;
+  min-width: 30%;
   height: 10%;
   margin-top: 20px;
   display: block;
@@ -2448,7 +2543,20 @@ body h1, body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-decoration: none;
+  border: none;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+@media (width: 800px) {
+  .touch .touch-call__info {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  .touch .touch-call__form-button {
+    min-width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2587,6 +2695,14 @@ body h1, body p {
 
 .footer-social__link:last-child {
   margin-right: 0px;
+}
+
+.footer-social__link:hover svg {
+  fill: #e74c3c;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .footer-copyright__text {

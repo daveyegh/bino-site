@@ -68,10 +68,25 @@
   color: #fff;
 }
 .blog__item-info {
-  padding-top: 70px;
-  padding-left: 50px;
   max-width: 50%;
   background-color: #e74c3c;
+}
+.blog__item-info__wrapper {
+  position: relative;
+  padding: 40px;
+}
+.blog__item-info__wrapper:before {
+  position: absolute;
+  top: 50%;
+  left: -90px;
+  display: block;
+  height: 70px;
+  border-width: 32px 40px 0;
+  border-style: solid;
+  border-color: #e74c3c transparent;
+  margin: 0 auto;
+  content: "";
+  transform: translateY(-50%) rotate(90deg);
 }
 .blog__item-title {
   margin-top: 20px;

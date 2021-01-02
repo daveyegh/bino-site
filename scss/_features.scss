@@ -43,9 +43,13 @@
         height: 1px;
         background-color: #888888;
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 768px) {
         .features {
             padding-top: 45px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .features {
             &__items {
             flex-direction: column;
             }

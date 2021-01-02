@@ -13,6 +13,11 @@
 .footer-social__link:last-child {
   margin-right: 0px;
 }
+.footer-social__link:hover svg {
+  fill: #e74c3c;
+  transition: 0.3s all ease;
+  transform: scale(1.05);
+}
 .footer-copyright__text {
   font-size: 14px;
   font-weight: 400;

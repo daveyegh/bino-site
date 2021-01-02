@@ -131,7 +131,6 @@
 }
 .works__overlay {
   width: 100%;
-  transition: 0.3 all ease;
   height: 100%;
   background-color: rgba(231, 76, 60, 0.8);
   opacity: 0;
@@ -139,6 +138,7 @@
 }
 .works__overlay:hover {
   opacity: 1;
+  transition: 0.3s;
 }
 .works__overlay::before {
   display: block;
@@ -161,6 +161,7 @@
   font-family: "Open Sans";
   font-weight: 400;
   color: #fff;
+  padding-bottom: 45px;
 }
 @media screen and (max-width: 768px) {
   .works .works__list {

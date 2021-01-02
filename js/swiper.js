@@ -34,4 +34,4 @@ const studySwiper = new Swiper(studySlider, {
         el: '.study-pagination',
         clickable: true,
     }
-})
+});

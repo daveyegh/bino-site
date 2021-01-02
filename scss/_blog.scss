@@ -52,6 +52,22 @@
     &__item {
         width: 50%;
         display: flex;
+        &:nth-child(3) {
+            .blog__item-info__wrapper::before {
+                margin-left: 16px;
+                left: 98%;
+                transform: translateY(-50%) rotate(270deg
+            );
+            }
+        }
+        &:last-child {
+            .blog__item-info__wrapper::before {
+                margin-left: 16px;
+                left: 98%;
+                transform: translateY(-50%) rotate(270deg
+            );
+            }
+        }
     }
     &__item-img {
         width: 50%;
@@ -59,7 +75,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
     }
     &__item-name {
         font-size: 14px;
@@ -68,10 +83,25 @@
         color: #fff;
     }
     &__item-info {
-        padding-top: 70px;
-        padding-left: 50px;
         max-width: 50%;
         background-color: #e74c3c;
+    }
+    &__item-info__wrapper {
+        position: relative;
+        padding: 40px;
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: -90px;
+            display: block;
+            height: 70px;
+            border-width: 32px 40px 0;
+            border-style: solid;
+            border-color: #e74c3c transparent;
+            margin: 0 auto;
+            content: '';
+            transform: translateY(-50%) rotate(90deg);
+        }
     }
     &__item-title {
         margin-top: 20px;
@@ -86,7 +116,6 @@
         width: 44px;
         height: 4px;
         background-color: #fff;
-
     }
     &__item-subtitle {
         margin-bottom: 30px;
@@ -109,17 +138,44 @@
         }
     }
 }
+@media screen and (max-width: 1200px) {
+    .page-wrapper {
+        .blog {
+            &__item {
+
+            }
+            &__item-info__wrapper {
+                padding: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1070px) {
+    .page-wrapper {
+        .blog {
+            &__item-info__wrapper {
+                padding: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .page-wrapper {
+        .blog {
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     .page-wrapper {
         .blog {
             &__item {
                 width: 100%;
             }
-            &__item-img {
-                display: none;
-            }
             &__item-info {
-                max-width: 100%
+                max-width: 50%;
             }
             &__item-subtitle {
                 margin-bottom: 15px;

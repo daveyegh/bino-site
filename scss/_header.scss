@@ -206,15 +206,15 @@
                 cursor: pointer;
                 position: relative;
                 z-index: 3;
-                .active::before {
+                &.active::before {
                     transform:rotate(45deg);
                     top: 9px;
                 }
-                .active::after {
+                &.active::after {
                     transform:rotate(-45deg);
                     bottom: 9px;
                 }
-                .active span {
+                &.active span {
                     transform: scale(0);
                 }
                 &::before {

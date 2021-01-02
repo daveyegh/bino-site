@@ -120,6 +120,9 @@
   padding: 40px 100px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
+.touch-call__form-form {
+  height: 100%;
+}
 .touch-call__form-input {
   outline: 0;
   margin-top: 30px;
@@ -163,7 +166,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
+  border: none;
 }
 @media screen and (max-width: 768px) {
   .touch .touch {
