@@ -8,6 +8,7 @@ body {
     }
     &.menu-opened{
         overflow: hidden;
+        overflow-y: scroll;
     }
     h1, p {
         margin: 0

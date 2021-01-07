@@ -13,6 +13,7 @@ body ul {
 
 body.menu-opened {
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 body h1, body p {
