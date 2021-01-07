@@ -149,21 +149,24 @@
         border-radius: 5px; 
         box-shadow: 0 2px 5px 1px rgba(0,0,0,.25);
     }
-    @media screen and (max-width: 768px) {}
     @media screen and (max-width: 800px) {
         .prices {
             &__flex {
                 flex-wrap: wrap;
             }
             &__item {
+                margin-top: 20px;
                 width: 100%;
             }
         }
     }
-    @media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 768px) {
+    .page-wrapper {
         .prices {
-            padding-top: 70px;
-            padding-bottom: 60px;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 }

@@ -174,7 +174,7 @@
         display: inline-block;
         padding: 0 15px;
     }
-    @media (width: 800px) {
+    @media (max-width: 800px) {
         .touch {
             &-call__info {
                 padding-top: 40px;
@@ -188,7 +188,7 @@
     }
     @media screen and (max-width: 768px) {
         .touch {
-            padding-bottom: 60px;
+            padding-bottom: 50px;
             &-call__wrapper {
                 flex-wrap: wrap;
             }
@@ -215,6 +215,15 @@
                 text-align: center;
                 margin: 0 auto;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-wrapper {
+        .touch {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 }

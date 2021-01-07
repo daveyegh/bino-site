@@ -180,4 +180,13 @@
             }
         }
     }
+    @media screen and (max-width: 400px) {
+        .services {
+            &__item-text {
+                p {
+                    padding: 0 11px;
+                }
+            }
+        }
+    }
 }

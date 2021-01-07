@@ -16,12 +16,17 @@ const servicesSlider = document.querySelector('.services__items.swiper-container
 
 const servicesSwiper = new Swiper(servicesSlider, {
     slidesPerView: 1,
-    spaceBBetween: 20,
+    spaceBetween: 20,
     direction: "vertical",
     loop: true,
     pagination: {
         el: '.swiper-pagination-services',
         clickable: true
+    },
+    breakpoints: {
+        768: {
+            
+        }
     }
 });
 

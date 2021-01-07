@@ -47,13 +47,26 @@
         border-radius: 3px;
     }
     @media screen and (max-width: 500px) {
-        .touch {
-            padding-top: 70px;
-            padding-bottom: 70px;
+        .ship {
             &-text {}
+            &-text__title {
+                font-size: 30px;
+                span {
+                    font-size: 32px;
+                }
+            }
             &-text__subtitle {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-wrapper {
+        .ship {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
 }
